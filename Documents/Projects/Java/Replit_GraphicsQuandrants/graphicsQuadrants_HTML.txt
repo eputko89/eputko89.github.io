@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Quadrants - Interactive Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .canvas-container {
+            margin: 20px 0;
+        }
+        canvas {
+            background-color: black;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+        }
+        .controls {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .control-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 180px;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .slider {
+            width: 200px;
+        }
+        .color-picker {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Graphics Quadrants</h1>
+        <p>This demo recreates a Java graphics application with four quadrants, each displaying different shapes.</p>
+        
+        <div class="controls">
+            <h2>Controls</h2>
+            
+            <div class="control-group">
+                <label for="shapeCount">Number of Shapes:</label>
+                <input type="range" id="shapeCount" class="slider" min="10" max="100" value="50">
+                <span id="shapeCountValue">50</span>
+            </div>
+            
+            <div class="control-group">
+                <label>Color Mode:</label>
+                <input type="radio" id="randomColors" name="colorMode" value="random" checked>
+                <label for="randomColors" style="width: auto;">Random</label>
+                <input type="radio" id="customColors" name="colorMode" value="custom">
+                <label for="customColors" style="width: auto;">Custom</label>
+            </div>
+            
+            <div class="control-group" id="customColorControls" style="display: none;">
+                <label for="lineColor">Line Color:</label>
+                <input type="color" id="lineColor" class="color-picker" value="#ff0000">
+                
+                <label for="circleColor">Circle Color:</label>
+                <input type="color" id="circleColor" class="color-picker" value="#00ff00">
+                
+                <label for="squareColor">Square Color:</label>
+                <input type="color" id="squareColor" class="color-picker" value="#0000ff">
+            </div>
+            
+            <div class="control-group">
+                <label for="circleSize">Max Circle Size:</label>
+                <input type="range" id="circleSize" class="slider" min="20" max="300" value="200">
+                <span id="circleSizeValue">200</span>
+            </div>
+            
+            <div class="control-group">
+                <label for="squareSize">Square Size:</label>
+                <input type="range" id="squareSize" class="slider" min="20" max="100" value="50">
+                <span id="squareSizeValue">50</span>
+            </div>
+            
+            <div class="control-group">
+                <button id="regenerateBtn">Regenerate Graphics</button>
+                <button id="resetBtn">Reset to Default</button>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="graphicsCanvas" width="800" height="600"></canvas>
+        </div>
+        
+        <div class="description">
+            <h2>Quadrants Description</h2>
+            <ul>
+                <li><strong>Top-Left:</strong> Random colored lines</li>
+                <li><strong>Bottom-Left:</strong> Random colored circles of varying sizes</li>
+                <li><strong>Top-Right:</strong> Colored squares of fixed size</li>
+                <li><strong>Bottom-Right:</strong> 3D cube with four colors (blue, yellow, green, red)</li>
+            </ul>
+            <p>The original version of this program was written in Java using Swing graphics.</p>
+        </div>
+    </div>
+
+    <script src="graphics.js"></script>
+</body>
+</html>

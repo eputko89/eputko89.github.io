@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Putko - Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Eric Putko</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="about">
+
+        <h2>Java Project</h2>
+
+        <div class="portfolio-item graphics-demo">
+            
+            
+            <div class="graphics-wrapper">
+                <!-- Canvas and Controls Here -->
+                <div class="graphics-app-container">
+                    
+                        <h3>Interactive Graphics Quadrants</h3>
+                        <p>A web implementation of my Java graphics program showing various rendering techniques:</p>
+
+                        <ul>
+                            <li>Random shapes generation</li>
+                            <li>Color manipulation</li>
+                            <li>3D visualization techniques</li>
+                        </ul>
+
+                    
+                    <div class="controls">
+                        <h2>Controls</h2>
+                        <!-- All controls HTML from the original index.html -->
+
+                        <div class="control-group">
+                            <label for="shapeCount">Number of Shapes:</label>
+                            <span id="shapeCountValue">50</span>
+                            <input type="range" id="shapeCount" class="slider" min="10" max="100" value="50">
+                            
+                        </div>
+                        
+                        <br>
+                        
+                        <div class="control-group">
+                            <label for="circleSize">Max Circle Size:</label>
+                            <span id="circleSizeValue">200</span>
+                            <input type="range" id="circleSize" class="slider" min="20" max="300" value="200">
+                            
+                        </div>
+                        <br>
+                        <div class="control-group">
+                            <label for="squareSize">Square Size:</label>
+                            <span id="squareSizeValue">50</span>
+                            <input type="range" id="squareSize" class="slider" min="20" max="100" value="50">
+                            
+                        </div>
+                        
+                        <!-- Include all other controls here -->
+                        <br>
+                        
+                        <div class="control-group" id="customColorControls" style="display: none;">
+                            <label for="lineColor">Line Color:</label>
+                            <input type="color" id="lineColor" class="color-picker" value="#ff0000">
+                            
+                            <label for="circleColor">Circle Color:</label>
+                            <input type="color" id="circleColor" class="color-picker" value="#00ff00">
+                            
+                            <label for="squareColor">Square Color:</label>
+                            <input type="color" id="squareColor" class="color-picker" value="#0000ff">
+                        </div>
+
+                        <br>
+
+                        <div class="control-group">
+                            <label>Color Mode:</label>
+                            <input type="radio" id="randomColors" name="colorMode" value="random" checked>
+                            <label for="randomColors" style="width: auto;">Random</label>
+                            <input type="radio" id="customColors" name="colorMode" value="custom">
+                            <label for="customColors" style="width: auto;">Custom</label>
+                        </div>
+
+                        <div class="control-group">
+                            <button id="regenerateBtn">Regenerate Graphics</button>
+                            <button id="resetBtn">Reset to Default</button>
+                        </div>
+
+                    </div> <!-- End Controls -->
+                    
+                    <div class="canvas-container">
+                        <canvas id="graphicsCanvas" width="800" height="600"></canvas>
+                    </div>
+
+                    <div class="description">
+                        <h2>Quadrants Description</h2>
+                        
+                        <ul>
+                            <li><strong>Top-Left:</strong> Random colored lines</li>
+                            <li><strong>Bottom-Left:</strong> Random colored circles of varying sizes</li>
+                            <li><strong>Top-Right:</strong> Colored squares of fixed size</li>
+                            <li><strong>Bottom-Right:</strong> 3D cube</li>
+                        </ul>
+                        
+                        <hr>
+
+                        <p>The original version of this program was written in Java for my CS-182 Intro to Java Programming course at Cuyamaca College using the <a href="https://eclipseide.org/" target="_blank">Eclipse IDE</a>.</p>
+
+                        <p>Initial code was provide by my Professor, Mr. David, from Cuyamaca College.</p>
+                        
+                        <p>We were provided with the initial code of the background, white borders, and partial content of the Upper-Left Quadrant. We were instructed to finish the Bottom-Left and Top-Right quadrants. The Bottom-Right quadrant was available for extra credit.</p>
+
+                        <h5>I've provided my submitted school work java src file below to reference as the original code before running it through <a href="https://replit.com/@ericputko" target="_blank">Replit</a> to help me display an interactive version on my page which was made using JavaScript and is displayed above.</h5>
+
+                        <a href="Documents/Projects/Java/Orig-Java-Src-Code.txt" download>Download Original Text File</a>
+
+                        <br>
+
+                        <object data="/Documents/Projects/Java/4.7_Loops/src/Frame.java" type="application/pdf" width="600" height="400">
+                            <p>Your browser cannot display PDFs. <a href="Documents/Projects/Java/Frame_Java-Source-Code_TextFile.pdf" download></a> Download Instead.</p>
+                        </object>
+
+                    </div> <!-- END description -->
+                </div> <!-- END graphics-app-container -->
+            </div> <!-- END graphics-wrapper -->
+        </div> <!-- END portfolio-item graphics-demo -->
+
+        <script src="graphics.js"></script>
+        
+        <a href="#">Top</a>
+
+    </section>      
+    
+    <script src="/Documents/Projects/Java/Replit_GraphicsQuandrants/graphics.js"></script>   
+
+    <footer>
+        <p>&copy; 2025 EricPutko. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
