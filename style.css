@@ -128,7 +128,7 @@ section {
     }
 
    #viewer {
-    width: max-content;
+    width: min-content;
    }
     
 }
