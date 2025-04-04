@@ -58,9 +58,16 @@ section {
 }
 
 #coffee {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    display: block;
+}
+
+#coffee input {
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+#coffee input:hover {
+    cursor: pointer;
 }
 
 #profilePicture img {
