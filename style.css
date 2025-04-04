@@ -129,11 +129,14 @@ section {
 }
 
 @media (max-width: 960px) {
+
+    section {
+        width: 80%;
+    }
     .section-container {
         display:flex;
         flex-wrap: wrap;
         margin-bottom: 10px;
-        width: 80%;
     }
     
 }
