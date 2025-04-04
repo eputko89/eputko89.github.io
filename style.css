@@ -126,11 +126,14 @@ section {
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
+}
 
-   #viewer {
-    width: min-content;
-   }
-    
+@media (max-width: 960px) {
+    .section-container {
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
 }
 
 
