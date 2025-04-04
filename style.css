@@ -57,6 +57,12 @@ section {
     box-shadow: 0.75px 3px 10px 0.25px;
 }
 
+#coffee {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 #profilePicture img {
     border-radius: 50%;
     box-shadow: 0px 5px 30px;
