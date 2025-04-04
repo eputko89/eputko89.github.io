@@ -126,6 +126,11 @@ section {
         flex-wrap: wrap;
         margin-bottom: 10px;
     }
+
+    section object {
+        display: flex;
+        flex-wrap: wrap;
+    }
     
 }
 
