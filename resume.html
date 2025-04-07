@@ -11,22 +11,25 @@
 
     <header>
 
-        <button onclick="topFunction()" id="myBtn" title="Go To Top">Top</button>
-
-        <h1>Eric Putko</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
+        <div class="logo">Eric Putko</div>
             
-        </nav>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
 
     </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go To Top">Top</button>
+
+    <button id="themeToggle">Toggle Dark Mode</button>
     
     <section>
 
@@ -41,6 +44,11 @@
     </section>
 
     <script src="buttonTop.js"></script>
+
+    <script src="theme_DarkMode.js"></script>
+
+    <!-- Hamburger Menu Mobile Friendly -->
+    <script src="hamburgerMenu.js"></script>
     
     <footer>
         <p>&copy; 2025 EricPutko. All rights reserved.</p>

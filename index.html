@@ -11,21 +11,25 @@
 
     <header>
 
-        <h1>Eric Putko</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">Eric Putko</div>
+            
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
 
     </header>
 
     <button onclick="topFunction()" id="myBtn" title="Go To Top">Top</button>
+
+    <button id="themeToggle">Toggle Dark Mode</button>
     
     <section id="profilePicture">
 
@@ -38,7 +42,7 @@
 
         <h2>About Me</h2>
 
-        <h4>Eric Putko - Web Developer & Creative Explorer</h4>
+        <h4>- Eric Putko - <br> Web Developer & Creative Explorer</h4>
 
         <p>With a strong foundation in web development and a passion for continuous learning, I bring expertise in HTML, CSS, JavaScript, PHP, MySQL, and graphic design. Having earned my Associate degree in Computer Information Systems with a focus on Web Development, I am eager to contribute my technical skills and problem-solving abilities to innovative projects.</p>
 
@@ -51,7 +55,7 @@
     
     <section id="projects">
 
-        <h2>Projects</h2>
+        <h2>Portfolio</h2>
 
         <div class="project">
             <h3>Graphic Design</h3>
@@ -60,7 +64,7 @@
         </div>
 
         <div class="project">
-            <h3>Java</h3>
+            <h3>Java & JavaScript</h3>
             <p>Here are some of my Java Programs from my course work.</p>
             <a href="project_Java.html">View Project</a>
         </div>
@@ -69,6 +73,12 @@
             <h3>Photography</h3>
             <p>Here are some of my photographs that I've taken through the years.</p>
             <a href="project_Photography.html">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>HTML Basics</h3>
+            <p>If you need a little refresher in HTML Basics take a look here.</p>
+            <a href="project_htmlBasics.html">View Project</a>
         </div>
 
     </section>
@@ -99,6 +109,10 @@
     </section>
 
     <script src="buttonTop.js"></script>
+
+    <script src="theme_DarkMode.js"></script>
+
+    <script src="hamburgerMenu.js"></script>
     
     <footer>
         <p>&copy; 2025 EricPutko. All rights reserved.</p>

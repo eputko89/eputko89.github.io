@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric Putko - Home</title>
+    <title>Eric Putko - Photography</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,25 +11,49 @@
 
     <header>
 
-        <h1>Eric Putko</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">Eric Putko</div>
+            
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
 
     </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go To Top">Top</button>
+
+    <button id="themeToggle">Toggle Dark Mode</button>
     
     <section>
 
-        
-        <a href="#" class="top">Top</a>
+    <h1>Photography</h1>
+    <hr>
+
+    <section>
+      <h3>Astrophotography</h3>
+      <hr>
+
+      <img src="Documents/Projects/Photography/Astrophotography/Mt. Laguna Meteor 07.11.2020 DSC_7194_thumbnail.jpg" alt="Meteor and Nebula">
+      
     </section>
+    
+    
+
+    </section>
+
+    <script src="buttonTop.js"></script>
+
+    <script src="theme_DarkMode.js"></script>
+
+    <!-- Hamburger Menu Mobile Friendly -->
+    <script src="hamburgerMenu.js"></script>
     
     <footer>
         <p>&copy; 2025 EricPutko. All rights reserved.</p>

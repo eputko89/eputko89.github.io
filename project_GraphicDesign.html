@@ -11,69 +11,112 @@
 
     <header>
 
-        <h1>Eric Putko</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">Eric Putko</div>
+            
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
 
     </header>
 
     <button onclick="topFunction()" id="myBtn" title="Go To Top">Top</button>
 
+    <button id="themeToggle">Toggle Dark Mode</button>
+
     <section>
 
-        <h2>Graphic Design - Photoshop</h2>
+        <h2>Graphic Design</h2>
+        <hr>
 
-        <div class="section-container">
-            <section>
-
+        <section class="projects">
+           
+            <!-- Project Card for Project 1 -->
+            <div class="project-card" onclick="openModal('project1-modal')">
                 <h3>Version 1</h3>
+                <img src="Documents/Projects/Graphic Design/Final-Submitted/Re-Sized/EP_Portfolio_Title_Final_Thumbnail.jpg" alt="Project 1 Thumbnail">
+            </div>
 
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Title_Final.jpg" target="_blank"><img src="/Documents/Projects/Graphic Design/Final-Submitted/Re-Sized/EP_Portfolio_Title_Final_Thumbnail.jpg" alt="Black Charcoal Background with White Lettering and Logo"></a><span class="tooltiptext">Title Page</span></div>
+        </section>
 
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page1_Final.jpg" target="_blank"><img src="/Documents/Projects/Graphic Design/Final-Submitted/Re-Sized/EP_Portfolio_Page1_Final_Thumbnail.jpg" alt="Image Collage with Person Holding Coffee Overlooking and Open Field with Semi-Transparent Image of Bald Eagle and American Flag in the Sky."></a><span class="tooltiptext">Image Collage</span></div>
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page2_Final.jpg" target="_blank"><img src="/Documents/Projects/Graphic Design/Final-Submitted/Re-Sized/EP_Portfolio_Page2_Final_Thumbnail.jpg" alt="Four separate images of surreal depictions of hand reaching out from platform or doorway with an image of the moon."></a><span class="tooltiptext">Surrealism</span></div>
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page3_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/Re-Sized/EP_Portfolio_Page3_Final_Thumbnail.jpg" alt="Three images of a dead tree that's curved with three different type design configurations."></a><span class="tooltiptext">Type Design</span></div>
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page4_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/Re-Sized/EP_Portfolio_Page4_Final_Thumbnail.jpg" alt="Movie Poster Re-Designs of The Good, The Bad, and The Ugly. Main poster has original actors replaced with Liam Neeson as the Man with No Name, Daniel Day Lewis as Angel Eyes, Sentenza, and Willam Dafoe as Tuco."></a><span class="tooltiptext">Movie Poster Re-Design</span></div>
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page5_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/Re-Sized/EP_Portfolio_Page5_Final_Thumbnail.jpg" alt="Surrealistic depiction of two hands holding the moon through a doorway with two mirrored heads of Salvador Dali staring back in a desert landscape."></a><span class="tooltiptext">Surrealism Re-Design</span></div>
-
-            </section>
-    
-            <section>
-
-                <h3>Version 2</h3>
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Title_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/Re-Sized/EP_Portfolio_Title_v2_Thumbnail.jpg" alt="Bright Blue Tile Effect Background with Dark Blue Grout Lines with White Lettering and Logo."></a><span class="tooltiptext">Title Page</span></div>
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page1_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/Re-Sized/EP_Portfolio_Page1_v2_Thumbnail.jpg" alt="Image Collage with Person Holding Coffee Overlooking and Open Field with Semi-Transparent Image of Bald Eagle and American Flag in the Sky."></a><span class="tooltiptext">Image Collage</span></div>
-
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page2_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/Re-Sized/EP_Portfolio_Page2_v2_Thumbnail.jpg" alt="Four separate images of surreal depictions of hand reaching out from platform or doorway with an image of the moon."></a><span class="tooltiptext">Surrealism</span></div>
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page3_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/Re-Sized/EP_Portfolio_Page3_v2.jpg" alt="Three images of a dead tree that's curved with three different type design configurations."></a><span class="tooltiptext">Type Design</span></div>
-
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page4_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/Re-Sized/EP_Portfolio_Page4_v2_Thumbnail.jpg" alt="Movie Poster Re-Designs of The Good, The Bad, and The Ugly. Main poster has original actors replaced with Liam Neeson as the Man with No Name, Daniel Day Lewis as Angel Eyes, Sentenza, and Willam Dafoe as Tuco."></a><span class="tooltiptext">Movie Poster Re-Design</span></div>
+        <!-- index.html, placed near the bottom before closing /body -->
+        <div id="project1-modal" class="modal">
+            
+            <span class="close" onclick="closeModal('project1-modal')">&times;</span>
+            <div class="modal-content">
+                <h2>Photoshop Portfolio: Version 1</h2>
+                <p>This is a collection of Photoshop projects I created for my portfolio in my Graphic Design class at Cuyamaca College.</p>
                 
-                <div class="tooltip"><a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page5psd_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/Re-Sized/EP_Portfolio_Page5psd_v2_Thumbnail.jpg" alt="Surrealistic depiction of two hands holding the moon through a doorway with two mirrored heads of Salvador Dali staring back in a desert landscape."></a><span class="tooltiptext">Surrealism Re-Design</span></div>
+                <a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Title_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Title_Final.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page1_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page1_Final.jpg" alt="Project 1 Image 2" style="width:100%; margin-top:10px;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page2_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page2_Final.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page3_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page3_Final.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page4_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page4_Final.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page5_Final.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Final-Submitted/EP_Portfolio_Page5_Final.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
                 
-            </section>
+            </div>
         </div>
+
+        <section class="projects">
+           
+            <!-- Project Card for Project 1 -->
+            <div class="project-card" onclick="openModal('project2-modal')">
+                <h3>Version 2</h3>
+                <img src="Documents/Projects/Graphic Design/Portfolio_v2/Re-Sized/EP_Portfolio_Title_v2_Thumbnail.jpg" alt="Project 1 Thumbnail">
+            </div>
+
+        </section>
+
+        <!-- index.html, placed near the bottom before closing /body -->
+        <div id="project2-modal" class="modal">
+            
+            <span class="close" onclick="closeModal('project2-modal')">&times;</span>
+            <div class="modal-content">
+                <h2>Photoshop Portfolio: Version 2</h2>
+                <p>This is a collection of Photoshop projects I created for my portfolio in my Graphic Design class at Cuyamaca College.</p>
+                
+                <a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Title_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Title_v2.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page1_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page1_v2.jpg" alt="Project 1 Image 2" style="width:100%; margin-top:10px;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page2_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page2_v2.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page3_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page3_v2.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page4_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page4_v2.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+
+                <a href="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page5psd_v2.jpg" target="_blank"><img src="Documents/Projects/Graphic Design/Portfolio_v2/EP_Portfolio_Page5psd_v2.jpg" alt="Project 1 Image 1" style="width:100%;"></a>
+                
+            </div>
+        </div>
+
+        
 
     </section>
 
+    <!-- Back to Top Button -->
     <script src="buttonTop.js"></script>
+
+    <!-- Image Modal -->
+    <script src="project_GraphicDesign_v2.js"></script>
+
+    <!-- Toggle Dark Mode -->
+     <script src="theme_DarkMode.js"></script>
+
+    <!-- Hamburger Menu Mobile Friendly -->
+    <script src="hamburgerMenu.js"></script>
 
     <footer>
         <p>&copy; 2025 EricPutko. All rights reserved.</p>

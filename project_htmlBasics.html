@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Putko - HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="htmlBasics.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">Eric Putko</div>
+            
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go To Top">Top</button>
+
+    <button id="themeToggle">Toggle Dark Mode</button>
+    
+    <section>
+
+        <h2>HTML Basics</h2>
+        <hr>
+
+        <main>
+            <!-- Begin Headings -->
+    
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Headings</span>
+                    <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                </div>
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+    
+                        <h1> &lt;h1&gt;  Hello World! &lt;/h1&gt;</h1><br><hr>
+                        <h2> &lt;h2&gt;  Hello World! &lt;/h2&gt;</h2><br><hr>
+                        <h3> &lt;h3&gt;  Hello World! &lt;/h3&gt;</h3><br>
+    
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- End Headings -->
+            <!-- Begin Paragraph -->
+    
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Paragraph</span>
+                    <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                </div>
+                
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <h1>Paragraph &lt;p&gt;</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor at expedita voluptates accusantium harum sit!</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- End Paragraph -->
+            <!-- Begin Lists -->
+    
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Lists</span>
+                    <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                </div>
+                
+                    <div class="expandable__content-wrapper">
+                        <div class="expandable__content">
+                            <h1>Ordered List &lt;ol&gt;</h1>
+                            <ol>
+                                <li>One</li>
+                                <li>Two</li>
+                                <li>Three</li>
+                            </ol><hr>
+    
+                            <h1>Unordered List &lt;ul&gt;</h1>
+                            <ul>
+                                <li>One</li>
+                                <li>Two</li>
+                                <li>Three</li>
+                            </ul><hr>
+    
+                            <h1>Description List &lt;dl&gt;</h1>
+                            <dl>
+                                <dt>IP</dt>
+                                <dd>Internet Protocol</dd>
+                                <dt>TCP</dt>
+                                <dd>Transmission Control Protocol</dd>
+                            </dl>
+                        </div>
+                    </div>
+    
+            </div>
+            
+            <!-- End Lists -->
+            <!-- Begin Blockquote -->
+    
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Blockquote</span>
+                    <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                </div>
+                
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <h1>Blockquote &lt;blockquote&gt;</h1>
+                        <blockquote> Meow, Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci earum architecto, cupiditate distinctio minus possimus!</blockquote>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- End Blockquote -->
+            <!-- Begin Div -->
+    
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Div</span>
+                    <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                </div>
+                
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <h1>Div &lt;div&gt;</h1>
+                        <p>I'm a div</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- End Div -->
+            <!-- Begin Special Entity Characters -->
+    
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Special Entity Characters</span>
+                    <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                </div>
+                
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <h1>Special Entity Characters</h1>
+                        
+                        <dl>
+                            <dt>&amp;nbsp;</dt>
+                            <dd>non-breaking space</dd>
+                            <dt>&amp;copy;</dt>
+                            <dd>&copy;&nbsp;copyright</dd>
+                        </dl>
+    
+                        <h2><a rel="noopener" href="https://www.w3schools.com/html/html_entities.asp" target="_blank">Click Here&nbsp;</a>for a list of other special entity characters</h2>
+                    </div>
+                </div>
+            
+            </div>
+    
+            <!-- End Special Entity Characters -->
+            <!-- Begin Phrase Elements -->
+    
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Phrase Elements</span>
+                    <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                </div>
+                
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <h1>Phrase Elements</h1>
+                        <p>
+                            &lt;b&gt; - <b>Bold</b> Text<br>
+                            &lt;strong&gt; - <strong>Strong</strong> Text<br>
+                            &lt;i&gt; - <i>Italic</i> text<br>
+                            &lt;em&gt; - <em>Emphasized</em> text<br>
+                            &lt;mark&gt; - <mark>Marked</mark> text<br>
+                            &lt;small&gt; - <small>Smaller</small> text<br>
+                            &lt;del&gt; - <del>Deleted</del> text<br>
+                            &lt;ins&gt; - <ins>Inserted</ins> text<br>
+                            &lt;sub&gt; - <sub>Subscript</sub> text<br>
+                            &lt;sup&gt; - <sup>Superscript</sup> text<br>
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- End Phrase Elements-->       
+            <!-- Begin Semantic Elements -->
+    
+            <div class="expandable">
+                <div class="expandable__title-bar">
+                    <span class="expandable__title">Semantic Elements</span>
+                    <ion-icon class="expandable__icon" name="chevron-back"></ion-icon>
+                </div>
+                
+                <div class="expandable__content-wrapper">
+                    <div class="expandable__content">
+                        <h1>Semantic Elements</h1>
+                        <a rel="noopener" href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Click Here</a> for examples of Semantic Elements such as &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;
+                    </div>
+                </div>
+    
+        </main><hr>
+
+        <footer>The above section made possible with help from the following tutorial by:  <a href="https://www.youtube.com/watch?v=9nJxybp7CEc" target="_blank" rel="noopener">Dom from dcode</a></footer>
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </section>
+
+    <script src="buttonTop.js"></script>
+
+    <!-- Tree View Tables -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Dark Mode Theme Toggle -->
+     <script src="theme_DarkMode.js"></script>
+
+    <!-- Hamburger Menu Mobile Friendly -->
+    <script src="hamburgerMenu.js"></script>
+    
+    <footer>
+        <p>&copy; 2025 EricPutko. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric Putko - Java</title>
+    <title>Eric Putko - Java & JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,25 +11,30 @@
 
     <header>
 
-        <h1>Eric Putko</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">Eric Putko</div>
+            
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#projects">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
 
     </header>
 
     <button onclick="topFunction()" id="myBtn" title="Go To Top">Top</button>
 
+    <button id="themeToggle">Toggle Dark Mode</button>
+
     <section id="about">
 
-        <h2>Java Project</h2>
+        <h2>Java & JavaScript</h2>
+        <hr>
 
         <div class="portfolio-item graphics-demo">
             
@@ -122,13 +127,13 @@
                         
                         <hr>
 
-                        <p>The original version of this program was written in Java for my CS-182 Intro to Java Programming course at Cuyamaca College using the <a href="https://eclipseide.org/" target="_blank">Eclipse IDE</a>.</p>
+                        <p>The original version of this program was written in Java for my CS-182 Intro to Java Programming course at Cuyamaca College using the <a href="https://eclipseide.org/" target="_blank" rel="noopener">Eclipse IDE</a>.</p>
 
                         <p>Initial code was provide by my Professor, Mr. David, from Cuyamaca College.</p>
                         
                         <p>We were provided with the initial code of the background, white borders, and partial content of the Upper-Left Quadrant. We were instructed to finish the Bottom-Left and Top-Right quadrants. The Bottom-Right quadrant was available for extra credit.</p>
 
-                        <h5>I've provided my submitted school work java src file below to reference as the original code before running it through <a href="https://replit.com/@ericputko" target="_blank">Replit</a> to help me display an interactive version on my page which was made using JavaScript and is displayed above.</h5>
+                        <h5>I've provided my submitted school work java src file below to reference as the original code before running it through <a href="https://replit.com/@ericputko" target="_blank" rel="noopener">Replit</a> to help me display an interactive version on my page which was made using JavaScript and is displayed above.</h5>
 
                         <a href="Documents/Projects/Java/Orig-Java-Src-Code.txt" download>Download Original Text File</a>
 
@@ -148,9 +153,15 @@
 
     </section>      
     
-    <script src="/Documents/Projects/Java/Replit_GraphicsQuandrants/graphics.js"></script>   
-    <script src="graphics.js"></script>
+    
+    <script src="graphics.js"></script>   
+
     <script src="buttonTop.js"></script>
+
+    <script src="theme_DarkMode.js"></script>
+
+    <!-- Hamburger Menu Mobile Friendly -->
+    <script src="hamburgerMenu.js"></script>
 
     <footer>
         <p>&copy; 2025 EricPutko. All rights reserved.</p>
