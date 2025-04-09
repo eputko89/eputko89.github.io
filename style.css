@@ -63,7 +63,7 @@ section {
 
 #profilePicture img {
     border-radius: 50%;
-    box-shadow: 0px 5px 30px;
+    box-shadow: 0px 5px 20px;
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
@@ -129,6 +129,7 @@ section {
     section {
         width: 80%;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -321,11 +322,11 @@ main {
     --xy-padding: 14px;
     --border-radius: 6px;
     --transition-ms: 0.3s;
-
+    
     max-width: 500px;
     margin: 1em 0;
     font-size: 16px;
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .expandable--open .expandable__content-wrapper {
@@ -360,7 +361,7 @@ main {
     padding: 0 var(--xy-padding);
     line-height: 1.4;
     font-size: 0.85em;
-    border: 1px solid #dddddd;
+    border: 2px solid #cccaca;
     border-top: none;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     overflow: hidden;
@@ -412,7 +413,7 @@ body.dark-mode a:hover {
 }
 
 body.dark-mode .expandable__title-bar {
-    background-color: #333;
+    background-color: #f1672b;
     color: white;
 }
 
@@ -430,7 +431,9 @@ body.dark-mode section, body.dark-mode .modal-content  { /* added */
     border: white 1px solid;
 }
 
-
+.dark-mode #profilePicture img {
+    box-shadow: 0px 5px 15px;
+}
 
 
 /* Dark Theme Button */
