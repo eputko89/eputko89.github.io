@@ -31,52 +31,17 @@
 
     <button id="themeToggle">Toggle Dark Mode</button>
     
-    <section aria-labelledby="resume-title" class="resume-section">
-  <h1 id="resume-title">Resume</h1>
+    <section>
 
-  <!-- Actions -->
-  <div class="resume-actions">
-    <a
-      class="btn"
-      href="Documents/Resume/Resume_EricPutko.pdf"
-      download="Eric-Putko-Resume.pdf"
-      rel="noopener"
-    >
-      ⬇️ Download PDF
-    </a>
+        <a href="Documents/Resume/Resume_EricPutko.pdf" target="_blank" download>Download Resume_EricPutko.pdf</a>
+        
+        <br>
 
-    <a
-      class="btn outline"
-      href="Documents/Resume/Resume_EricPutko.pdf"
-      target="_blank"
-      rel="noopener"
-    >
-      ↗️ Open in New Tab
-    </a>
-  </div>
+        <object data="Documents/Resume/Resume_EricPutko.pdf" type="application/pdf" width="100%" height="600">
+            <p>Your browser cannot display PDFs. <a href="Documents/Resume/Resume_EricPutko.pdf" download></a> Download Instead.</p>
+        </object>
 
-  <!-- Embedded PDF with accessible fallback -->
-  <div class="resume-frame">
-    <iframe
-      title="Eric Putko Resume PDF"
-      src="Documents/Resume/Resume_EricPutko.pdf#view=FitH"
-      loading="lazy"
-    ></iframe>
-
-    <noscript>
-      <p>
-        JavaScript is disabled. You can
-        <a href="Documents/Resume/Resume_EricPutko.pdf" target="_blank" rel="noopener">open the resume here</a>
-        Or use the download button above.
-      </p>
-    </noscript>
-  </div>
-
-  <p class="resume-note">
-    Having trouble on mobile? Use <em>Open in New Tab</em> for the system PDF viewer (better zoom & print).
-  </p>
-</section>
-
+    </section>
 
     <script src="buttonTop.js"></script>
 
