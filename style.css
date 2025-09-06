@@ -527,6 +527,27 @@ nav ul li a {
         display: block;
         padding: 10px 20px;
     }
+
+    /* Resume page */
+.resume-section { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.resume-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin: .75rem 0 1rem; }
+.btn { padding: .6rem .9rem; border-radius: .5rem; border: none; text-decoration: none; display: inline-block; }
+.btn { background: var(--btn-bg, #222); color: var(--btn-fg, #fff); }
+.btn.outline { background: transparent; border: 1px solid currentColor; }
+.resume-frame { border: 1px solid rgba(0,0,0,.12); border-radius: .5rem; overflow: hidden; background: #fff; }
+
+/* Responsive, tall enough to read comfortably across devices */
+.resume-frame iframe {
+  width: 100%;
+  height: clamp(60vh, 80vh, 100vh);
+  border: 0;
+}
+
+/* Optional: respect dark mode container while keeping PDF area white */
+@media (prefers-color-scheme: dark) {
+  .resume-frame { background: #fff; }
+}
+
 }
 
 /* END */
