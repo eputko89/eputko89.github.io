@@ -144,7 +144,10 @@ section {
     }
 }
 
-
+/* Certifications Section of Home Page */
+#certifications ul li {
+    list-style-type: none;
+}
 /* Projects Section of Home Page */
 .project {
     border: 1px solid rgb(230, 227, 227);
